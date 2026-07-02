@@ -1,0 +1,1226 @@
+diff --git a/metrics/harim_plus/LICENSE.md b/metrics/harim_plus/LICENSE.md
+new file mode 100644
+index 0000000..6786ca4
+--- /dev/null
++++ b/metrics/harim_plus/LICENSE.md
+@@ -0,0 +1,280 @@
++© NCSOFT Corporation. All Rights Reserved.
++
++Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
++
++1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
++
++2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
++
++3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
++
++THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
++
++Any questions about our licensed work can be sent to opensource@ncsoft.com.
++
++--------------------------------------
++
++This software uses Open Source Software (OSS). You can find the link for the source code of these open source projects, along with applicable license information, below.
++
++charset-normalizer <br>
++https://github.com/Ousret/charset_normalizer <br>
++Copyright (c) 2019 TAHRI Ahmed R. <br>
++MIT License
++
++datasets <br>
++https://github.com/huggingface/datasets <br>
++Copyright 2020 The HuggingFace Authors.<br>
++Apache License 2.0
++
++decorator<br>
++https://github.com/micheles/decorator<br>
++Copyright (c) 2005-2018, Michele Simionato. All rights reserved.<br>
++BSD 2-Clause "Simplified" License
++
++dill<br>
++https://github.com/uqfoundation/dill<br>
++Copyright (c) 2004-2016 California Institute of Technology.<br>
++Copyright (c) 2016-2022 The Uncertainty Quantification Foundation. All rights reserved.<br>
++BSD 3-Clause "New" or "Revised" License
++
++evaluate <br>
++https://github.com/huggingface/evaluate<br>
++Copyright 2020 The HuggingFace Datasets Authors and the TensorFlow Datasets Authors.<br>
++Apache License 2.0
++
++executing<br>
++https://github.com/alexmojaki/executing<br>
++Copyright (c) 2019 Alex Hall<br>
++MIT License
++
++fire<br>
++https://github.com/google/python-fire<br>
++Copyright 2017 Google Inc. All rights reserved.<br>
++Apache License 2.0
++
++frozenlist<br>
++https://github.com/aio-libs/frozenlist<br>
++Copyright 2013-2019 Nikolay Kim and Andrew Svetlov<br>
++Apache License 2.0
++
++fsspec<br>
++https://github.com/fsspec/filesystem_spec<br>
++Copyright (c) 2018, Martin Durant. All rights reserved.<br>
++BSD 3-Clause "New" or "Revised" License
++
++huggingface-hub<br>
++https://github.com/huggingface/huggingface_hub<br>
++Copyright 2022-present, the HuggingFace Inc. team.<br>
++Apache License 2.0
++
++idna<br>
++https://github.com/kjd/idna<br>
++Copyright (c) 2013-2021, Kim Davies All rights reserved.<br>
++BSD 3-Clause "New" or "Revised" License
++
++ipython<br>
++https://github.com/ipython/ipython<br>
++Copyright (c) 2008-Present, IPython Development Team<br>
++Copyright (c) 2001-2007, Fernando Perez <fernando.perez@colorado.edu><br>
++Copyright (c) 2001, Janko Hauser <jhauser@zscout.de><br>
++Copyright (c) 2001, Nathaniel Gray <n8gray@caltech.edu> All rights reserved.<br>
++BSD 3-Clause "New" or "Revised" License
++
++jedi<br>
++https://github.com/davidhalter/jedi<br>
++Copyright (c) <2013> <David Halter and others, see AUTHORS.txt><br>
++MIT License
++
++matplotlib-inline<br>
++https://github.com/ipython/matplotlib-inline<br>
++Copyright (c) 2019-2022, IPython Development Team. All rights reserved.<br>
++BSD 3-Clause "New" or "Revised" License
++
++multidict<br>
++https://github.com/aio-libs/multidict<br>
++Copyright 2016-2021 Andrew Svetlov and aio-libs team<br>
++Apache License 2.0
++
++multiprocess<br>
++https://github.com/uqfoundation/multiprocess<br>
++Copyright (c) 2008-2016 California Institute of Technology.<br>
++Copyright (c) 2016-2022 The Uncertainty Quantification Foundation. All rights reserved.<br>
++BSD 3-Clause "New" or "Revised" License
++
++numpy<br>
++https://github.com/numpy/numpy<br>
++Copyright (c) 2005-2022, NumPy Developers. All rights reserved.<br>
++BSD 3-Clause "New" or "Revised" License
++
++packaging<br>
++https://github.com/pypa/packaging<br>
++Copyright (c) Donald Stufft and individual contributors. All rights reserved.<br>
++Apache License 2.0
++
++pandas<br>
++https://github.com/pandas-dev/pandas<br>
++Copyright (c) 2008-2011, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team All rights reserved.<br>
++BSD 3-Clause "New" or "Revised" License
++
++parso<br>
++https://github.com/davidhalter/parso<br>
++Copyright (c) <2013-2017> <David Halter and others, see AUTHORS.txt><br>
++MIT License
++
++pexpect<br>
++https://github.com/pexpect/pexpect<br>
++Copyright (c) 2013-2014, Pexpect development team<br>
++Copyright (c) 2012, Noah Spurrier <noah@noah.org><br>
++ISC License
++
++pickleshare<br>
++https://github.com/pickleshare/pickleshare<br>
++Copyright (c) 2016 Ville Vainio<br>
++MIT License
++
++prompt-toolkit<br>
++https://github.com/prompt-toolkit/python-prompt-toolkit<br>
++Copyright (c) 2014, Jonathan Slenders. All rights reserved.<br>
++BSD 3-Clause "New" or "Revised" License
++
++ptyprocess<br>
++https://github.com/pexpect/ptyprocess<br>
++Copyright (c) 2013-2014, Pexpect development team<br>
++Copyright (c) 2012, Noah Spurrier <noah@noah.org><br>
++ISC License
++
++pure-eval<br>
++https://github.com/alexmojaki/pure_eval<br>
++Copyright (c) 2019 Alex Hall<br>
++MIT License
++
++pyarrow<br>
++https://github.com/apache/arrow<br>
++Copyright 2016-2019 The Apache Software Foundation<br>
++Apache License 2.0
++
++Pygments<br>
++https://github.com/pygments/pygments<br>
++Copyright (c) 2006-2022 by the respective authors (see AUTHORS file). All rights reserved.<br>
++BSD 2-Clause "Simplified" License
++
++pyparsing<br>
++https://github.com/pyparsing/pyparsing/<br>
++Copyright (c) 2003-2022 Paul T. McGuire<br>
++MIT License
++
++python-dateutil<br>
++https://github.com/dateutil/dateutil<br>
++Copyright 2017- Paul Ganssle <paul@ganssle.io><br>
++Copyright 2017- dateutil contributors (see AUTHORS file)<br>
++Apache License 2.0
++
++pytz<br>
++https://github.com/stub42/pytz<br>
++Copyright (c) 2003-2019 Stuart Bishop <stuart@stuartbishop.net><br>
++MIT License
++
++PyYAML<br>
++https://github.com/yaml/pyyaml<br>
++Copyright (c) 2017-2021 Ingy döt Net<br>
++Copyright (c) 2006-2016 Kirill Simonov<br>
++MIT License
++
++regex<br>
++https://github.com/mrabarnett/mrab-regex<br>
++copyright (c) 1998-2001 by Secret Labs AB<br>
++Apache License 2.0
++
++requests<br>
++https://github.com/psf/requests<br>
++©MMXVIX. A Kenneth Reitz Project.<br>
++Apache License 2.0
++
++responses<br>
++https://github.com/getsentry/responses<br>
++Copyright 2015 David Cramer<br>
++Apache License 2.0
++
++six<br>
++https://github.com/benjaminp/six<br>
++Copyright (c) 2010-2020 Benjamin Peterson<br>
++MIT License
++
++stack-data<br>
++https://github.com/alexmojaki/stack_data<br>
++Copyright (c) 2019 Alex Hall<br>
++MIT License
++
++termcolor<br>
++https://github.com/termcolor/termcolor<br>
++Copyright (c) 2008-2011 Volvox Development Team<br>
++MIT License
++
++tokenizers<br>
++https://github.com/huggingface/tokenizers<br>
++Apache License 2.0
++
++toml<br>
++https://github.com/uiri/toml<br>
++Copyright 2013-2019 William Pearson<br>
++Copyright 2015-2016 Julien Enselme<br>
++Copyright 2016 Google Inc.<br>
++Copyright 2017 Samuel Vasko<br>
++Copyright 2017 Nate Prewitt<br>
++Copyright 2017 Jack Evans<br>
++Copyright 2019 Filippo Broggini<br>
++MIT License<br>
++
++torch<br>
++https://github.com/pytorch/pytorch<br>
++Copyright (c) 2016- Facebook, Inc (Adam Paszke)<br>
++Copyright (c) 2014- Facebook, Inc (Soumith Chintala)<br>
++Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)<br>
++Copyright (c) 2012-2014 Deepmind Technologies (Koray Kavukcuoglu)<br>
++Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)<br>
++Copyright (c) 2011-2013 NYU (Clement Farabet)<br>
++Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)<br>
++Copyright (c) 2006 Idiap Research Institute (Samy Bengio)<br>
++Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)<br>
++BSD 3-Clause "New" or "Revised" License
++
++tqdm<br>
++https://github.com/tqdm/tqdm<br>
++2015-2021 (c) Casper da Costa-Luis<br>
++2016 (c) [PR #96] on behalf of Google Inc.<br>
++2013 (c) Noam Yorav-Raphael, original author.<br>
++Mozilla Public License 2.0
++
++traitlets<br>
++https://github.com/ipython/traitlets<br>
++Copyright (c) 2001-, IPython Development Team<br>
++BSD 3-Clause "New" or "Revised" License
++
++transformers<br>
++https://github.com/huggingface/transformers<br>
++Copyright 2018- The Hugging Face team. All rights reserved.<br>
++Apache License 2.0
++
++typing_extensions<br>
++https://github.com/python/typing_extensions<br>
++Python Software Foundation License 2.0
++
++urllib3<br>
++https://github.com/urllib3/urllib3<br>
++Copyright (c) 2008-2020 Andrey Petrov and contributors (see CONTRIBUTORS.txt)<br>
++MIT License
++
++wcwidth<br>
++https://github.com/jquast/wcwidth<br>
++Copyright (c) 2014 Jeff Quast <contact@jeffquast.com><br>
++MIT License
++
++xxhash<br>
++https://github.com/ifduyue/python-xxhash<br>
++Copyright (c) 2014-2020, Yue Du. All rights reserved.<br>
++BSD 2-Clause "Simplified" License
++
++yarl<br>
++https://github.com/aio-libs/yarl<br>
++Copyright 2016-2021, Andrew Svetlov and aio-libs team<br>
++Apache License 2.0
+diff --git a/metrics/harim_plus/README.md b/metrics/harim_plus/README.md
+new file mode 100644
+index 0000000..57a7907
+--- /dev/null
++++ b/metrics/harim_plus/README.md
+@@ -0,0 +1,90 @@
++---
++title: HaRiM+
++emoji: 🤗
++colorFrom: blue
++colorTo: red
++sdk: gradio
++sdk_version: 3.9
++app_file: app.py
++pinned: false
++tags:
++- evaluate
++- metric
++description: >-
++  HaRiM+ is reference-less metric for summary quality evaluation which hurls the
++  power of summarization model to estimate the quality of the summary-article
++  pair. <br /> Note that this metric is reference-free and do not require
++  training. It is ready to go without reference text to compare with the
++  generation nor any model training for scoring.
++short_description: HaRiM+ is a reference-free summary faithfulness measure.
++---
++
++
++# HaRiM+
++HaRiM+: Evaluating Summary Quality with Hallucination Risk, accepted at AACL-22 [paper](https://arxiv.org/abs/2211.12118). <br />
++<br />
++HaRiM+ is reference-less metric for summarization task which hurls the power of summarization model to estimate the quality of the summary-article pair. <br />
++Note that this metric is reference-free and do not require training. It is ready to go without reference text to compare with the generation nor any model training for scoring.
++
++## Quick Start
++### install
++```bash
++pip install evaluate
++```
++### example
++You can clone this space and run <code>python test_harim_score.py [--pretrained_name CKPTNAME_FOR_S2SLM] </code> or try below. <br />
++(running on CPU is possible, but expected to be too slow for use.)
++
++```python
++import evaluate
++from pprint import pprint
++
++art = """Spain's 2-0 defeat by Holland on Tuesday brought back bitter memories of their disastrous 2014 World Cup, but coach Vicente del Bosque will not be too worried about a third straight friendly defeat, insists Gerard Pique. Holland, whose 5-1 drubbing of Spain in the group stage in Brazil last year marked the end of the Iberian nation's six-year domination of the world game, scored two early goals at the Amsterdam Arena and held on against some determined Spain pressure in the second half for a 2-0 success. They became the first team to inflict two defeats on Del Bosque since he took over in 2008 but the gruff 64-year-old had used the match to try out several new faces and he fielded a largely experimental, second-string team. Stefan de Vrij (right) headed Holland in front against Spain at the Amsterdam Arena on Tuesday Gerard Pique (left) could do nothing to stop Davy Klaassen doubling the Dutch advantage Malaga forward Juanmi and Sevilla midfielder Vitolo became the 55th and 56th players to debut under Del Bosque, while the likes of goalkeeper David de Gea, defenders Raul Albiol, Juan Bernat and Dani Carvajal and midfielder Mario Suarez all started the game. 'The national team's state of health is good,' centre back Gerard Pique told reporters. 'We are in a process where players are coming into the team and gathering experience,' added the Barcelona defender. 'We are second in qualifying (for Euro 2016) and these friendly games are for experimenting. 'I am not that worried about this match because we lost friendlies in previous years and then ended up winning titles.' David de Gea was given a start by Vicente del Bosque but could not keep out De Vrij's header here Dani Carvajal (centre) was another squad player given a chance to impress against Holland Del Bosque will be confident he can find the right mix of players to secure Spain's berth at Euro 2016 in France next year, when they will be chasing an unprecedented third straight title. Slovakia are the surprise leaders in qualifying Group C thanks to a 2-1 win over Spain in Zilina in October and have a maximum 15 points from five of 10 matches. Spain are second on 12 points, three ahead of Ukraine, who they beat 1-0 in Seville on Friday. Del Bosque's side host Slovakia in September in a match that could decide who goes through to the finals as group winners. 'The team is in good shape,' forward Pedro told reporters. 'We have a very clear idea of our playing style and we are able to count on people who are gradually making a place for themselves in the team.'"""
++
++summaries = [
++  "holland beat spain 2-0 at the amsterdam arena on tuesday night . stefan de vrij and davy klaassen scored goals for holland . defeat recalls horror 5-1 defeat by holland at the world cup . vicente del bosque used game to give younger spain players a chance .",
++  "holland beat spain 2-0 in the group stage in brazil on tuesday night . del bosque will be hoping to find the right mix of players to the world cup . gerard pique could make the right mix of players to the tournament .",
++  "del bosque beat spain 2-0 at the amsterdam arena on tuesday night . stefan de vrij and davy klaassen scored goals for holland . defeat recalls horror 5-1 defeat by holland at the world cup . vicente del bosque used game to give younger spain players a chance .",
++  "holland could not beat spain 2-0 at the amsterdam arena on tuesday night . stefan de vrij and davy klaassen scored goals for holland . defeat recalls horror 5-1 defeat by holland at the world cup . vicente del bosque used game to give younger spain players a chance .",
++]
++articles = [art] * len(summaries)
++
++scorer = evaluate.load('NCSOFT/harim_plus')
++scores = scorer.compute(predictions = summaries, references = articles) # use_aggregator=False, bsz=32, return_details=False, tokenwise_score=False)
++pprint([round(s,4) for s in scores])
++>>> [2.7096, 3.7338, 2.669, 2.4039, 2.3759]
++```
++
++## Powering HaRiM+ score with other summarization model checkpoints
++HaRiM+ accepts any checkpoint compatible with <code>transformers.AutoModelForSeq2SeqLM</code> which is encoder-decoder model. <br />
++In principle the HaRiM+ score expected to work on machine-translation too. It works but not better than BARTScore (Yuan et al.) while it excels in summarization task.  
++
++```python
++
++newharim = evaluate.load('NCSOFT/harim_plus', pretrained_name='local or ckpt name available')#, tokenizer=custom_tokenizer)
++```
++
++## Speed and Resource requirements
++HaRiM+ requires GPU usage for practical speed, but only loads encoder-decoder model of your choice (Default \= facebook\/bart\-large\-cnn). Empirically, resource requirements and speed is similar to BERTScore.
++
++## Citation
++Please cite as follows
++```
++@inproceedings{son-etal-2022-harim,
++    title = "{H}a{R}i{M}$^+$: Evaluating Summary Quality with Hallucination Risk",
++    author = "Son, Seonil (Simon)  and
++      Park, Junsoo  and
++      Hwang, Jeong-in  and
++      Lee, Junghwa  and
++      Noh, Hyungjong  and
++      Lee, Yeonsoo",
++    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing",
++    month = nov,
++    year = "2022",
++    address = "Online only",
++    publisher = "Association for Computational Linguistics",
++    url = "https://aclanthology.org/2022.aacl-main.66",
++    pages = "895--924",
++    abstract = "One of the challenges of developing a summarization model arises from the difficulty in measuring the factual inconsistency of the generated text. In this study, we reinterpret the decoder overconfidence-regularizing objective suggested in (Miao et al., 2021) as a hallucination risk measurement to better estimate the quality of generated summaries. We propose a reference-free metric, HaRiM+, which only requires an off-the-shelf summarization model to compute the hallucination risk based on token likelihoods. Deploying it requires no additional training of models or ad-hoc modules, which usually need alignment to human judgments. For summary-quality estimation, HaRiM+ records state-of-the-art correlation to human judgment on three summary-quality annotation sets: FRANK, QAGS, and SummEval. We hope that our work, which merits the use of summarization models, facilitates the progress of both automated evaluation and generation of summary.",
++}
++```
+\ No newline at end of file
+diff --git a/metrics/harim_plus/app.py b/metrics/harim_plus/app.py
+new file mode 100644
+index 0000000..4422f0b
+--- /dev/null
++++ b/metrics/harim_plus/app.py
+@@ -0,0 +1,6 @@
++import evaluate
++from evaluate.utils import launch_gradio_widget
++
++
++module = evaluate.load("NCSOFT/harim_plus")
++launch_gradio_widget(module)
+diff --git a/metrics/harim_plus/gitattributes b/metrics/harim_plus/gitattributes
+new file mode 100644
+index 0000000..c7d9f33
+--- /dev/null
++++ b/metrics/harim_plus/gitattributes
+@@ -0,0 +1,34 @@
++*.7z filter=lfs diff=lfs merge=lfs -text
++*.arrow filter=lfs diff=lfs merge=lfs -text
++*.bin filter=lfs diff=lfs merge=lfs -text
++*.bz2 filter=lfs diff=lfs merge=lfs -text
++*.ckpt filter=lfs diff=lfs merge=lfs -text
++*.ftz filter=lfs diff=lfs merge=lfs -text
++*.gz filter=lfs diff=lfs merge=lfs -text
++*.h5 filter=lfs diff=lfs merge=lfs -text
++*.joblib filter=lfs diff=lfs merge=lfs -text
++*.lfs.* filter=lfs diff=lfs merge=lfs -text
++*.mlmodel filter=lfs diff=lfs merge=lfs -text
++*.model filter=lfs diff=lfs merge=lfs -text
++*.msgpack filter=lfs diff=lfs merge=lfs -text
++*.npy filter=lfs diff=lfs merge=lfs -text
++*.npz filter=lfs diff=lfs merge=lfs -text
++*.onnx filter=lfs diff=lfs merge=lfs -text
++*.ot filter=lfs diff=lfs merge=lfs -text
++*.parquet filter=lfs diff=lfs merge=lfs -text
++*.pb filter=lfs diff=lfs merge=lfs -text
++*.pickle filter=lfs diff=lfs merge=lfs -text
++*.pkl filter=lfs diff=lfs merge=lfs -text
++*.pt filter=lfs diff=lfs merge=lfs -text
++*.pth filter=lfs diff=lfs merge=lfs -text
++*.rar filter=lfs diff=lfs merge=lfs -text
++*.safetensors filter=lfs diff=lfs merge=lfs -text
++saved_model/**/* filter=lfs diff=lfs merge=lfs -text
++*.tar.* filter=lfs diff=lfs merge=lfs -text
++*.tflite filter=lfs diff=lfs merge=lfs -text
++*.tgz filter=lfs diff=lfs merge=lfs -text
++*.wasm filter=lfs diff=lfs merge=lfs -text
++*.xz filter=lfs diff=lfs merge=lfs -text
++*.zip filter=lfs diff=lfs merge=lfs -text
++*.zst filter=lfs diff=lfs merge=lfs -text
++*tfevents* filter=lfs diff=lfs merge=lfs -text
+diff --git a/metrics/harim_plus/harim_plus.py b/metrics/harim_plus/harim_plus.py
+new file mode 100644
+index 0000000..ee7e75b
+--- /dev/null
++++ b/metrics/harim_plus/harim_plus.py
+@@ -0,0 +1,327 @@
++import datasets
++import evaluate
++
++# from harim_scorer import Harimplus_Scorer #no plan to package it to pip
++import torch
++import torch.nn.functional as F
++from transformers import (AutoModelForSeq2SeqLM,
++                        AutoTokenizer,
++                        PreTrainedTokenizer,
++                        PreTrainedTokenizerFast,
++                        )
++from transformers.tokenization_utils_base import BatchEncoding # for custom tokenizer other than huggingface
++
++import pandas as pd
++from tqdm import tqdm
++
++from typing import List, Dict, Union
++from collections import defaultdict
++from functools import partial
++
++
++
++logger = evaluate.logging.get_logger(__name__)
++
++CODEBASE_URL='https://huggingface.co/spaces/NCSOFT/harim_plus'
++PAPER_URL='https://arxiv.org/abs/2211.12118'
++
++_CITATION = """\
++@inproceedings{son-etal-2022-harim,
++    title = "{H}a{R}i{M}$^+$: Evaluating Summary Quality with Hallucination Risk",
++    author = "Son, Seonil (Simon)  and
++      Park, Junsoo  and
++      Hwang, Jeong-in  and
++      Lee, Junghwa  and
++      Noh, Hyungjong  and
++      Lee, Yeonsoo",
++    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing",
++    month = nov,
++    year = "2022",
++    address = "Online only",
++    publisher = "Association for Computational Linguistics",
++    url = "https://aclanthology.org/2022.aacl-main.66",
++    pages = "895--924",
++    abstract = "One of the challenges of developing a summarization model arises from the difficulty in measuring the factual inconsistency of the generated text. In this study, we reinterpret the decoder overconfidence-regularizing objective suggested in (Miao et al., 2021) as a hallucination risk measurement to better estimate the quality of generated summaries. We propose a reference-free metric, HaRiM+, which only requires an off-the-shelf summarization model to compute the hallucination risk based on token likelihoods. Deploying it requires no additional training of models or ad-hoc modules, which usually need alignment to human judgments. For summary-quality estimation, HaRiM+ records state-of-the-art correlation to human judgment on three summary-quality annotation sets: FRANK, QAGS, and SummEval. We hope that our work, which merits the use of summarization models, facilitates the progress of both automated evaluation and generation of summary.",
++}
++"""
++
++_DESCRIPTION = f"""HaRiM+ is a reference-less evaluation metric (i.e. requires only article-summary pair, no reference summary) for summarization which leverages the power of summarization model.
++Summarization model inside the HaRiM+ will read and evaluate how good the quality of a summary given the paired article.
++It will work great for ranking the summary-article pairs according to its quality.
++
++HaRiM+ is proved effective for benchmarking summarization systems (system-level performance) as well as ranking the article-summary pairs (segment-level performance) in comprehensive aspect such as factuality, consistency, coherency, fluency, and relevance. For details, refer to our [paper]({PAPER_URL}) published in AACL2022.
++
++NOTE that for HaRiM+...
++* predictions = summaries (List[str])
++* references = articles (List[str])
++
++Also Note that
++* higher score = better quality
++"""
++
++_KWARGS_DESCRIPTION = """
++HaRiM+ score.
++Args:
++    For scorer = evaluate.load():
++    `pretrained_name` (str or pathlib.Path): summarization model checkpoint or path, loaded by transformers.AutoModelForSeq2SeqLM.from_pretrained(). Defaults to Yale-LILY/brio-cnndm-uncased.
++    `tokenizer`: (use when your tokenizer cannot be loaded by from_pretrained)Tokenizer function compatible with transformers.PreTrainedTokenizer. It requires tokenizer.pad_token|eos_token|bos_token and tokenizer.__call__() method for HaRiM+ score computation.
++
++    For scorer.compute():
++    `predictions` (list of str): generated summaries
++    `references` (list of str): source articles to be summarized
++    `use_aggregator` (bool=False): if True, average of the scores are returned
++    `bsz` (int=32): batch size for harim to iterate through the given pairs
++    `return_details` (bool=False): whether to show more than harim+ score (returns logppl, harim term. refer to the paper for detail)
++        `tokenwise_score` (bool=False): whether to show tokenwise scores for input pairs (if return_details=False, this is ignored)
++
++Returns:
++    'results' (list of float): harim+ score for each summary-article pair
++
++Examples:
++    >>> summaries = ["hello there", "hello there"]
++    >>> articles = ["hello, this is the article to be summarized", "hello, this is the article to be summarized"]
++    >>> scorer = evaluate.load("NCSOFT/harim_plus") #, pretrained_name='PRETRAINEDNAME', tokenizer=TOKENIZER # optional
++    >>> results = scorer.compute(predictions=summaries, references=articles) # use_aggregator=True # optional
++    >>> print([round(v, 2) for v in results["harim+"]])
++    [float, float]
++"""
++
++class Harimplus_Scorer:
++    def __init__(self,
++                    pretrained_name:str='none',
++                    tokenizer:Union[PreTrainedTokenizer, PreTrainedTokenizerFast]=None,
++                    mixing_factor:float=7., # same as lambda in the paper
++                    device:str='cuda',
++
++                    src_maxlen=1024,
++                    tgt_maxlen=110,
++                ):
++        self._pretrained_name = pretrained_name
++        self._lambda = mixing_factor
++
++        self._device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
++        self._encdec_model = AutoModelForSeq2SeqLM.from_pretrained(self._pretrained_name)
++        if tokenizer is None:
++            self._tokenizer = AutoTokenizer.from_pretrained(self._pretrained_name)
++        else:
++            self._tokenizer = tokenizer
++        self._encdec_model.to(self._device)
++        self._encdec_model.eval()
++
++        self._src_maxlen = src_maxlen
++        self._tgt_maxlen = tgt_maxlen
++
++
++
++    def _prep_input(self, src_tgt_txts, src_or_tgt='src'):
++        L = self._src_maxlen if src_or_tgt=='src' else self._tgt_maxlen
++        if isinstance(src_tgt_txts, pd.Series):
++            src_tgt_txts=src_tgt_txts.tolist()
++            if src_or_tgt == 'src':
++                src_tgt_txts = [ s.replace("\n", " ") for s in src_tgt_txts ]
++        return self._tokenizer(src_tgt_txts, padding=True, truncation=True, max_length=L, return_tensors='pt') # ModelInput dataclass
++
++
++    '''below are helper functions w/o dependency to the self, but included inside the class for ease of use'''
++    def likelihoods(self, logits, force_decode_indices, tgt_mask):
++        probs = F.softmax(logits, dim=-1)
++        probs_force_decode_ = probs.gather(-1, force_decode_indices.unsqueeze(-1)).squeeze()
++        probs_force_decode= probs_force_decode_ * tgt_mask
++        assert probs_force_decode.shape == force_decode_indices.shape
++        return probs_force_decode
++
++    def log_likelihoods(self, logits, force_decode_indices, tgt_mask):
++        ll = F.log_softmax(logits, dim=-1)
++        ll_force_decode_ = ll.gather(-1, force_decode_indices.unsqueeze(-1)).squeeze()
++        ll_force_decode = ll_force_decode_ * tgt_mask
++
++        return ll_force_decode
++
++    def harim(self, s2s_logits, lm_logits, force_decode_indices, tgt_mask ):
++        p_s2s, p_lm = self.likelihoods(s2s_logits, force_decode_indices, tgt_mask), \
++                        self.likelihoods(lm_logits, force_decode_indices, tgt_mask)
++
++        delta = p_s2s - p_lm
++        margin_linear = (1-delta) / 2
++        harim = -(1-p_s2s) * margin_linear + 1
++        return harim # this is -1 * hallucination risk
++
++    def make_minibatches(self, exs:List[str], bsz:int=32):
++        idx=0
++        minibatches = []
++        while True:
++            start = idx
++            end = idx+bsz
++            if start >= len(exs):
++                break
++
++            minibatches.append( exs[start:end] )
++            idx += bsz
++        return minibatches
++
++    def make_empty_minibatches(self, minibatches:List[List[str]]):
++        e_minibatches = minibatches.copy()
++        for i, mb in enumerate(e_minibatches):
++            e_minibatches[i] = ['' for ex in mb]
++        return e_minibatches
++
++
++    def compute(self, predictions:List[str],
++                        references:List[str],
++                        bsz:int=32,
++                        use_aggregator:bool=False,
++                        return_details:bool=False,
++                        # tokenwise_score:bool=False,
++                        ):
++        '''
++        returns harim+ score (List[float]) for predictions (summaries) and references (articles)
++        **Note**
++            - here, predictions = generated summaries to be evaluated, references = article to be summarized (but to follow the convention of the evaluate, we named kwarg as "references")
++            - log_ppl equals to bartscore (yuan et al., neurips 2021)
++
++        if tokenwise_score:
++            returns minibatch chunks of harim+ scores and log-likelihoods with tokenized predictions (List[str])
++        if use_aggregator:
++            returning scores are aggregated (mean) over given test set
++        '''
++
++
++        # tokenize/prep src/tgts
++        make_minibatches_bsz = partial(self.make_minibatches, bsz=bsz)
++        summaries = predictions
++        articles = references
++        b_srcs, b_tgts = map(make_minibatches_bsz, [articles, summaries])
++        b_emps = self.make_empty_minibatches(b_srcs)
++
++        scores=defaultdict(list)
++        for mini_s, mini_e, mini_t in tqdm(zip(b_srcs, b_emps, b_tgts), total=len(b_tgts), desc=f"computing HaRiM+ {bsz=}, core={self._pretrained_name}"):
++            src_in = self._prep_input(mini_s, src_or_tgt='src')
++            emp_in = self._prep_input(mini_e, src_or_tgt='src')
++            tgt_in = self._prep_input(mini_t, src_or_tgt='tgt')
++            if emp_in.input_ids.shape[-1]==0: # emp_in.input_ids.shape == (32,0)
++                boseos = f"{self._tokenizer.bos_token}{self._tokenizer.eos_token}"
++                mini_e_ = [boseos for _ in range(len(mini_e))]
++                emp_in = self._prep_input( mini_e_, src_or_tgt='src' )
++
++
++            tgt_mask = tgt_in.attention_mask # torch.Tensor
++            # if not tokenizer loaded from huggingface, this might cause some problem (.to(device))
++            if not isinstance(src_in, BatchEncoding):
++                src_in = BatchEncoding(src_in)
++            if not isinstance(emp_in, BatchEncoding):
++                emp_in = BatchEncoding(emp_in)
++            if not isinstance(tgt_in, BatchEncoding):
++                tgt_in = BatchEncoding(tgt_in)
++                
++            src_in = src_in.to(self._device)
++            emp_in = emp_in.to(self._device)
++            tgt_in = tgt_in.to(self._device)
++            tgt_mask = tgt_mask.to(self._device)
++            fill_ignore_mask = ~(tgt_mask.bool())
++
++            with torch.no_grad():
++                # token_type_ids attribute causes error
++                s2s_logits = self._encdec_model.forward(
++                                                    input_ids = src_in.input_ids,
++                                                    attention_mask = src_in.attention_mask,
++                                                    labels = tgt_in.input_ids.masked_fill(fill_ignore_mask, -100),
++                                                    return_dict=True).logits
++                lm_logits = self._encdec_model.forward(
++                                                    input_ids = emp_in.input_ids,
++                                                    attention_mask = emp_in.attention_mask,
++                                                    labels = tgt_in.input_ids.masked_fill(fill_ignore_mask, -100),
++                                                    return_dict=True).logits
++                sent_lengths = tgt_mask.sum(-1)
++                ll_tok = self.log_likelihoods(s2s_logits, tgt_in.input_ids, tgt_mask)
++                ll = ll_tok.sum(-1) / sent_lengths
++
++                harim_tok = self.harim(s2s_logits, lm_logits, tgt_in.input_ids, tgt_mask)
++                harim = harim_tok.sum(-1) / sent_lengths
++
++                harim_plus_normalized = (ll + self._lambda * harim) # loglikelihood + lambda * negative_harim (negative harim=-1* risk)
++
++                scores['harim+'].extend(harim_plus_normalized.tolist())
++                scores['harim'].extend(harim.tolist())
++                scores['log_ppl'].extend(ll.tolist())
++
++                # if tokenwise_score:
++                #     scores['tok_harim+'].append(harim_tok*self._lambda + ll_tok)
++                #     scores['tok_predictions'].append( [self._tokenizer.convert_ids_to_token(idxs) for idxs in src_in.labels] )
++
++        if use_aggregator: # after
++            for k, v in scores.items():
++                if not k.startswith('tok_'):
++                    scores[k] = sum(v)/len(v) # aggregate (mean)
++        scores['lambda'] = self._lambda
++        if not return_details:
++            scores = scores['harim+']
++        return scores
++
++
++
++
++
++@evaluate.utils.file_utils.add_start_docstrings(_DESCRIPTION, _KWARGS_DESCRIPTION)
++class Harimplus(evaluate.Metric):
++    def __init__(self,
++                    pretrained_name='facebook/bart-large-cnn',
++                    tokenizer=None,
++                    device='cuda',
++                    **kwargs
++                    ):
++        super().__init__(**kwargs)
++        self.myconfig = dict(
++                            pretrained_name=pretrained_name,
++                            tokenizer=tokenizer,
++                            device=device,
++                            )
++
++    def _info(self):
++        return evaluate.MetricInfo(
++            description=_DESCRIPTION,
++            citation=_CITATION,
++            homepage=CODEBASE_URL,
++            inputs_description=_KWARGS_DESCRIPTION,
++            features=datasets.Features(
++                {
++                    "predictions": datasets.Value("string", id="sequence"),
++                    "references": datasets.Value("string", id="sequence"),
++                }
++            ),
++            codebase_urls=[CODEBASE_URL],
++            reference_urls=[CODEBASE_URL, PAPER_URL],
++        )
++
++    def _download_and_prepare(self, dl_manager):
++        pretrained_name = self.myconfig['pretrained_name']
++        is_custom_tokenizer = self.myconfig['tokenizer'] is not None
++        logger.warning(
++            "Loading HaRiM+ score"
++            f"\tpretrained_name = {pretrained_name}"
++        )
++        if is_custom_tokenizer:
++            logger.warning(
++                f"tokenizer is overriden by \n\tself.myconfig['tokenizer']"
++            )
++        logger.warning(
++            "You can change checkpoints with `pretrained_name` kwarg in evaluate.load. Strongly recommend to use *-large or larger ones."
++            "Refrain from using checkpoints trained on noisy corpus such as bbc-XSUM.")
++
++        # download the model checkpoint specified by self.myconfig_name and set up the scorer
++        self.scorer = Harimplus_Scorer(**self.myconfig)
++
++    def _compute(self, predictions=None,
++                        references=None,
++                        use_aggregator=False,
++                        bsz=32,
++                        return_details=False):       
++                        # tokenwise_score=False,
++                        
++        summaries = predictions
++        articles = references
++        scores = self.scorer.compute(predictions=summaries,
++                                    references=articles,
++                                    use_aggregator=use_aggregator,
++                                    bsz=bsz, #tokenwise_score=tokenwise_score,
++                                    return_details=return_details)
++        return scores
+diff --git a/metrics/harim_plus/harim_scorer.py b/metrics/harim_plus/harim_scorer.py
+new file mode 100644
+index 0000000..608c644
+--- /dev/null
++++ b/metrics/harim_plus/harim_scorer.py
+@@ -0,0 +1,182 @@
++import torch
++import torch.nn.functional as F
++from transformers import (AutoModelForSeq2SeqLM,
++                        AutoTokenizer,
++                        PreTrainedTokenizer,
++                        PreTrainedTokenizerFast)
++import evaluate
++
++from fire import Fire
++import pandas as pd
++from tqdm import tqdm
++import json
++
++from typing import List, Dict, Union
++from collections import defaultdict
++from functools import partial
++from pprint import pprint
++
++from ipdb import set_trace
++
++class Harimplus_Scorer:
++    def __init__(self,
++                    pretrained_name:str='none',
++                    tokenizer:Union[PreTrainedTokenizer, PreTrainedTokenizerFast]=None,
++                    mixing_factor:float=7., # same as lambda in the paper
++                    device:str='cuda',
++
++                    src_maxlen=1024,
++                    tgt_maxlen=110,
++                ):
++        self._pretrained_name = pretrained_name
++        self._lambda = mixing_factor
++
++        self._device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
++        self._encdec_model = AutoModelForSeq2SeqLM.from_pretrained(self._pretrained_name)
++        if tokenizer is None:
++            self._tokenizer = AutoTokenizer.from_pretrained(self._pretrained_name)
++        else:
++            self._tokenizer = tokenizer
++        self._encdec_model.to(self._device)
++        self._encdec_model.eval()
++
++        self._src_maxlen = src_maxlen
++        self._tgt_maxlen = tgt_maxlen
++
++
++
++    def _prep_input(self, src_tgt_txts, src_or_tgt='src'):
++        L = self._src_maxlen if src_or_tgt=='src' else self._tgt_maxlen
++        if isinstance(src_tgt_txts, pd.Series):
++            src_tgt_txts=src_tgt_txts.tolist()
++            if src_or_tgt == 'src':
++                src_tgt_txts = [ s.replace("\n", " ") for s in src_tgt_txts ]
++        return self._tokenizer(src_tgt_txts, padding=True, truncation=True, max_length=L, return_tensors='pt') # ModelInput dataclass
++
++
++    '''below are helper functions w/o dependency to the self, but included inside the class for ease of use'''
++    def likelihoods(self, logits, force_decode_indices, tgt_mask):
++        probs = F.softmax(logits, dim=-1)
++        probs_force_decode_ = probs.gather(-1, force_decode_indices.unsqueeze(-1)).squeeze()
++        probs_force_decode= probs_force_decode_ * tgt_mask
++        assert probs_force_decode.shape == force_decode_indices.shape
++        return probs_force_decode
++
++    def log_likelihoods(self, logits, force_decode_indices, tgt_mask):
++        ll = F.log_softmax(logits, dim=-1)
++        ll_force_decode_ = ll.gather(-1, force_decode_indices.unsqueeze(-1)).squeeze()
++        ll_force_decode = ll_force_decode_ * tgt_mask
++
++        return ll_force_decode
++
++    def harim(self, s2s_logits, lm_logits, force_decode_indices, tgt_mask ):
++        p_s2s, p_lm = self.likelihoods(s2s_logits, force_decode_indices, tgt_mask), \
++                        self.likelihoods(lm_logits, force_decode_indices, tgt_mask)
++
++        delta = p_s2s - p_lm
++        margin_linear = (1-delta) / 2
++        harim = -(1-p_s2s) * margin_linear + 1
++        return harim # this is -1 * hallucination risk
++
++    def make_minibatches(self, exs:List[str], bsz:int=32):
++        idx=0
++        minibatches = []
++        while True:
++            start = idx
++            end = idx+bsz
++            if start >= len(exs):
++                break
++
++            minibatches.append( exs[start:end] )
++            idx += bsz
++        return minibatches
++
++    def make_empty_minibatches(self, minibatches:List[List[str]]):
++        e_minibatches = minibatches.copy()
++        for i, mb in enumerate(e_minibatches):
++            e_minibatches[i] = ['' for ex in mb]
++        return e_minibatches
++
++
++    def compute(self, predictions:List[str],
++                        references:List[str],
++                        bsz:int=32,
++                        use_aggregator:bool=False,
++                        return_details:bool=False,
++                        tokenwise_score:bool=False,
++                        ):
++        '''
++        returns harim+ score (List[float]) for predictions (summaries) and references (articles)
++        **Note**
++            - here, predictions = generated summaries to be evaluated, references = article to be summarized (but to follow the convention of the evaluate, we named kwarg as "references")
++            - log_ppl equals to bartscore (yuan et al., neurips 2021)
++
++        if tokenwise_score:
++            returns minibatch chunks of harim+ scores and log-likelihoods with tokenized predictions (List[str])
++        if use_aggregator:
++            returning scores are aggregated (mean) over given test set
++        '''
++
++        # tokenize/prep src/tgts
++        make_minibatches_bsz = partial(self.make_minibatches, bsz=bsz)
++        summaries = predictions
++        articles = references
++        b_srcs, b_tgts = map(make_minibatches_bsz, [articles, summaries])
++        b_emps = self.make_empty_minibatches(b_srcs)
++
++        scores=defaultdict(list)
++        for mini_s, mini_e, mini_t in tqdm(zip(b_srcs, b_emps, b_tgts), total=len(b_tgts), desc=f"computing HaRiM+ {bsz=}, core={self._pretrained_name}"):
++            src_in = self._prep_input(mini_s, src_or_tgt='src')
++            emp_in = self._prep_input(mini_e, src_or_tgt='src')
++            tgt_in = self._prep_input(mini_t, src_or_tgt='tgt')
++            if emp_in.input_ids.shape[-1]==0: # emp_in.input_ids.shape == (32,0)
++                boseos = f"{self._tokenizer.bos_token}{self._tokenizer.eos_token}"
++                mini_e_ = [boseos for _ in range(len(mini_e))]
++                emp_in = self._prep_input( mini_e_, src_or_tgt='src' )
++
++
++            tgt_mask = tgt_in.attention_mask
++
++            src_in = src_in.to(self._device)
++            emp_in = emp_in.to(self._device)
++            tgt_in = tgt_in.to(self._device)
++            tgt_mask = tgt_mask.to(self._device)
++            fill_ignore_mask = ~(tgt_mask.bool())
++
++            with torch.no_grad():
++                # token_type_ids attribute causes error
++                s2s_logits = self._encdec_model.forward(
++                                                    input_ids = src_in.input_ids,
++                                                    attention_mask = src_in.attention_mask,
++                                                    labels = tgt_in.input_ids.masked_fill(fill_ignore_mask, -100),
++                                                    return_dict=True).logits
++                lm_logits = self._encdec_model.forward(
++                                                    input_ids = emp_in.input_ids,
++                                                    attention_mask = emp_in.attention_mask,
++                                                    labels = tgt_in.input_ids.masked_fill(fill_ignore_mask, -100),
++                                                    return_dict=True).logits
++                sent_lengths = tgt_mask.sum(-1)
++                ll_tok = self.log_likelihoods(s2s_logits, tgt_in.input_ids, tgt_mask)
++                ll = ll_tok.sum(-1) / sent_lengths
++
++                harim_tok = self.harim(s2s_logits, lm_logits, tgt_in.input_ids, tgt_mask)
++                harim = harim_tok.sum(-1) / sent_lengths
++
++                harim_plus_normalized = ll + self._lambda * harim # loglikelihood + lambda * negative_harim (negative harim=-1* risk)
++
++                scores['harim+'].extend(harim_plus_normalized.tolist())
++                scores['harim'].extend(harim.tolist())
++                scores['log_ppl'].extend(ll.tolist())
++
++                if tokenwise_score:
++                    scores['tok_harim+'].append(harim_tok*self._lambda + ll_tok)
++                    scores['tok_predictions'].append( [self._tokenizer.convert_ids_to_token(idxs) for idxs in src_in.labels] )
++
++        if use_aggregator: # after
++            for k, v in scores.items():
++                if not k.startswith('tok_'):
++                    scores[k] = sum(v)/len(v) # aggregate (mean)
++        scores['lambda'] = self._lambda
++        if not return_details:
++            scores = scores['harim+']
++        return scores
+diff --git a/metrics/harim_plus/requirements.txt b/metrics/harim_plus/requirements.txt
+new file mode 100644
+index 0000000..d17f443
+--- /dev/null
++++ b/metrics/harim_plus/requirements.txt
+@@ -0,0 +1,100 @@
++aiohttp==3.8.3
++aiosignal==1.3.1
++anyio==3.6.2
++asttokens==2.1.0
++async-timeout==4.0.2
++attrs==22.1.0
++backcall==0.2.0
++bcrypt==4.0.1
++certifi==2022.9.24
++cffi==1.15.1
++charset-normalizer==2.1.1
++click==8.1.3
++colorama==0.4.6
++contourpy==1.0.6
++cryptography==38.0.3
++cycler==0.11.0
++datasets==2.6.1
++decorator==5.1.1
++dill==0.3.5.1
++evaluate==0.3.0
++executing==1.2.0
++fastapi==0.86.0
++ffmpy==0.3.0
++filelock==3.8.0
++fire==0.4.0
++fonttools==4.38.0
++frozenlist==1.3.3
++fsspec==2022.10.0
++gradio==3.9
++h11==0.12.0
++httpcore==0.15.0
++httpx==0.23.0
++huggingface-hub==0.10.1
++idna==3.4
++ipdb==0.13.9
++ipython==8.6.0
++jedi==0.18.1
++Jinja2==3.1.2
++kiwisolver==1.4.4
++linkify-it-py==1.0.3
++lxml==4.9.1
++markdown-it-py==2.1.0
++MarkupSafe==2.1.1
++matplotlib==3.6.2
++matplotlib-inline==0.1.6
++mdit-py-plugins==0.3.1
++mdurl==0.1.2
++multidict==6.0.2
++multiprocess==0.70.13
++numpy==1.23.4
++orjson==3.8.1
++packaging==21.3
++pandas==1.5.1
++paramiko==2.12.0
++parso==0.8.3
++pexpect==4.8.0
++pickleshare==0.7.5
++Pillow==9.3.0
++portalocker==2.6.0
++prompt-toolkit==3.0.32
++ptyprocess==0.7.0
++pure-eval==0.2.2
++pyarrow==10.0.0
++pycparser==2.21
++pycryptodome==3.15.0
++pydantic==1.10.2
++pydub==0.25.1
++Pygments==2.13.0
++PyNaCl==1.5.0
++pyparsing==3.0.9
++python-dateutil==2.8.2
++python-multipart==0.0.5
++pytz==2022.6
++PyYAML==6.0
++regex==2022.10.31
++requests==2.28.1
++responses==0.18.0
++rfc3986==1.5.0
++sacrebleu==2.3.1
++six==1.16.0
++sniffio==1.3.0
++stack-data==0.6.0
++starlette==0.20.4
++tabulate==0.9.0
++termcolor==2.1.0
++tokenizers==0.13.2
++toml==0.10.2
++tqdm==4.64.1
++traitlets==5.5.0
++transformers==4.24.0
++typing_extensions==4.4.0
++uc-micro-py==1.0.1
++urllib3==1.26.12
++uvicorn==0.19.0
++wcwidth==0.2.5
++websockets==10.4
++xxhash==3.1.0
++yarl==1.8.1
++--extra-index-url https://download.pytorch.org/whl/cu116
++torch==1.13.0+cu116
+diff --git a/metrics/harim_plus/test_harim_score.py b/metrics/harim_plus/test_harim_score.py
+new file mode 100644
+index 0000000..67684e6
+--- /dev/null
++++ b/metrics/harim_plus/test_harim_score.py
+@@ -0,0 +1,158 @@
++import evaluate
++# from harim_scorer import Harimplus_Scorer #no plan to package it to pip
++
++
++from fire import Fire
++from tqdm import tqdm
++
++from pprint import pprint
++ARTS = [
++     """Spain's 2-0 defeat by Holland on Tuesday brought back bitter memories of their disastrous 2014 World Cup, but coach Vicente del Bosque will not be too worried about a third straight friendly defeat, insists Gerard Pique. Holland, whose 5-1 drubbing of Spain in the group stage in Brazil last year marked the end of the Iberian nation's six-year domination of the world game, scored two early goals at the Amsterdam Arena and held on against some determined Spain pressure in the second half for a 2-0 success. They became the first team to inflict two defeats on Del Bosque since he took over in 2008 but the gruff 64-year-old had used the match to try out several new faces and he fielded a largely experimental, second-string team. Stefan de Vrij (right) headed Holland in front against Spain at the Amsterdam Arena on Tuesday Gerard Pique (left) could do nothing to stop Davy Klaassen doubling the Dutch advantage Malaga forward Juanmi and Sevilla midfielder Vitolo became the 55th and 56th players to debut under Del Bosque, while the likes of goalkeeper David de Gea, defenders Raul Albiol, Juan Bernat and Dani Carvajal and midfielder Mario Suarez all started the game. 'The national team's state of health is good,' centre back Gerard Pique told reporters. 'We are in a process where players are coming into the team and gathering experience,' added the Barcelona defender. 'We are second in qualifying (for Euro 2016) and these friendly games are for experimenting. 'I am not that worried about this match because we lost friendlies in previous years and then ended up winning titles.' David de Gea was given a start by Vicente del Bosque but could not keep out De Vrij's header here Dani Carvajal (centre) was another squad player given a chance to impress against Holland Del Bosque will be confident he can find the right mix of players to secure Spain's berth at Euro 2016 in France next year, when they will be chasing an unprecedented third straight title. Slovakia are the surprise leaders in qualifying Group C thanks to a 2-1 win over Spain in Zilina in October and have a maximum 15 points from five of 10 matches. Spain are second on 12 points, three ahead of Ukraine, who they beat 1-0 in Seville on Friday. Del Bosque's side host Slovakia in September in a match that could decide who goes through to the finals as group winners. 'The team is in good shape,' forward Pedro told reporters. 'We have a very clear idea of our playing style and we are able to count on people who are gradually making a place for themselves in the team.'""", # neg rnn
++
++
++
++     '''A youngster has emulated Barcelona star Martin Montoya and scored an audacious 27-yard goal into a basketball hoop - twice. Schoolboy Frankie Franz watched the Spanish right-back pull off the staggering trick shot in a video recorded at Barcelona's Ciutat Esportiva training ground earlier in the month. The viral clip shows the 23-year-old defender lifting the ball into the net to the sound of gasps from his team mates at the Catalonia club. Joking  that he could do the same with his mum and grandmother, nine-year-old Frankie, who is an academy player with Dagenham and Redbridge Football Club, took to the garden to have a go. He moved the basketball hoop into the middle of the goal and after a little run up sent the ball straight through the net first time. In the video he can be seen turning to face the camera looking absolutely gob-smacked as he places his hands behind his head. A slow motion look at the clip captures the trajectory of the ball, which bounces off the backboard and goes through the hoop below. His mother Lucy, 32, of Upminster, east London, said: `He loves football and after he saw the Barcelona player do the show he said `I'll be able to do that'. Frankie decided to have a go at the trick shot after watching Barcelona star Martin Montoya pull it off in a video recorded at the club's Ciutat Esportiva training ground The nine-year-old kicks the ball and sends it straight through the net on the first time of trying just like Spanish right-back Montoya The gob-smacked youngsters places his hands behind his head after scoring while Montoya (right) wheels away in celebration `Me and my mum just said `Really?' and he went to get the net, pulled it over and bang - it went in first time. `Me and mum were like `oh my god' we couldn't believe it. `He is very good at football, but that was just amazing. It was very special.' According to Lucy, although not captured on camera, the youngster had another go immediately after and netted again. "I think he's got it down now," said Lucy, who helps run a building firm with husband Matt, 34. "He is very confident but you can tell by the look on his face I think he was surprised too." The talented young centre midfielder has played football since he could walk and dreams of one day turning out for Real Madrid or Barcelona. The  young centre midfielder is an academy player with Dagenham and Redbridge Football Club and dreams of one day turning out for Real Madrid or Barcelona.''', # neg 1
++
++     '''The view that Manchester City’s chance at defending their Premier League title has been ruined through bad spending gathered pace after they were defeated by a club whose entire team cost less than half one of their substitutes. Crystal Palace’s XI on Monday night may only have been worth a mere £17m, but left back Martin Kelly still made it through a City defence deemed good enough to keep £40m signing Eliaquim Mangala on the bench to tee up a chance for Wilfried Zaha just 60 seconds into the game. Mangala joined from Porto in August last year and is contracted to City until June 2019. Eliaquim Mangala (green bib) prepares to come on but he never made it off the Manchester City bench However, striker Glenn Murray succeeded in putting another dent in City’s chances of redeeming themselves after a run of four losses away, when he scored Palace’s first goal. Murray cost Palace nothing when joined from arch rivals Brighton in 2011. Jason Puncheon, signed for a comparative pittance of £1.9m, delivered City their final blow with a goal from a finely executed free-kick. Glenn Murray (left) cost Palace nothing four years ago yet found a way past the City defence Another expensive City player, £24m-man Yaya Toure, got his team back in the game with 12 minutes left, but they couldn’t penetrate Palace’s defence to find an equaliser and a 2-1 defeat leaves them nine points adrift of the top. Toure joined from Barcelona in July 2010 and is contracted to City until 2017. After spending a total of £500m pounds on transfer fees, City might have expected to be higher than a precarious fourth in the league, but judging by their latest results, it’s teams like Crystal Palace that seem to be getting their value for money. Mangala has endured a miserable first season at the Etihad Stadium since his £40million move''', # neg1_
++
++     '''(CNN)Soon, America will be too fat to fight. Forget about rampant diabetes, heart attacks and joint problems -- the scariest consequence arising out of our losing battle with the bulge is the safety of our country. In about five years, so many young Americans will be grossly overweight that the military will be unable to recruit enough qualified soldiers. That alarming forecast comes from Maj, Gen. Allen Batschelet, who is in charge of U.S. Army Recruiting Command. Obesity, he told me, ``is becoming a national security issue." I was so taken aback by Batschelet's statement that I felt the need to press him. Come on! Obesity? A national security crisis? The General didn't blink. ``In my view, yes." Of the 195,000 young men and women who signed up to fight for our country, only 72,000 qualified. Some didn't make the cut because they had a criminal background, or a lack of education, or too many tattoos. But a full 10\% didn't qualify because they were overweight. Before you accuse me of sensationalizing, it's that 10\% figure that worries General Batschelet the most. ``The obesity issue is the most troubling because the trend is going in the wrong direction," he said. ``We think by 2020 it could be as high as 50\%, which mean only 2 in 10 would qualify to join the Army." He paused. ``It's a sad testament to who we are as a society right now." The problem is so worrisome for the Army that recruiters have become fitness coaches, like the trainers on the NBC show, ``The Biggest Loser." Yes, your tax dollars pay for Army recruiters to play Dolvett Quince or Jillian Michaels to whip could-be recruits into shape with the hope they can diet and exercise their way to become real recruits. If they lose enough weight, they're sent to boot camp. Some make it; many don't. But, General Batschelet told me the Army must try. ``We are the premier leader on personal development in the world," he told me. ``We want to see you grow and become a leader. That is a great strength in our Army." Except the Army never considered the type of growth it's now contending with. Nowadays ``personal development" means working on both character and ... girth. The general, along with so many others in this country, is struggling with why so many Americans, despite all the warnings, continue to eat too much and exercise too little. I have a theory. It ain't pretty. But it's got to be true: We just don't care. ``The acceptance of obesity is prevalent," according to Claire Putnam, an obstetrician and gynecologist who believes obesity is a national crisis right now. ``When you look around you, 70\% of adults are overweight or obese. It's seems normal," she said. Just look at the numbers: More than one-third of U.S. adults are obese. Seventeen percent of all children and adolescents in the U.S. are obese. That's triple the rate from just a generation ago. So, maybe we should face the fact that we've grown comfortable with our girth. It is crystal clear we haven't the foggiest idea of who needs to lose weight and who doesn't. Just the other day, Twitter trolls scolded the singer, Pink, for gaining weight. Pink is not remotely fat. Neither is Selena Gomez, haters. Or Britney Spears, hecklers. If 70\% of us are overweight in this country, why are there so many willing to fat-shame people who are not remotely obese? Maybe it's easier to criticize others for carrying extra weight than to admit we have a weight problem ourselves. Because it is abundantly clear we are wallowing in denial. Dr. Putnam points to one of Kaiser Permanante's medical questionnaires. You know, the paperwork patients are asked to fill out before they see the doctor. There is actually a box on the form that allows the patient to ``opt out of talking about obesity." Some patients refuse to step on the scale. ``You want to be sensitive to that patient," Putnam told me. ``You don't want to nag. But, doctors need to step in and say we need to fix this." CNN's chief medical correspondent, Dr. Sanjay Gupta, agrees with Putnam. ``Perceptions of weight are a big part of the problem," he said to me. ``If a person is overweight -- as difficult as it is -- they ought to be told. You know, this issue reminds me of the issue with concussions. We should call them what they really are: a brain injury, not 'getting your bell rung.' In the same vein, we should tell people who are overweight or obese that, clinically, they're 'overweight' or 'obese' and at risk for just about every chronic disease in the book." In other words, chubby is not the proper way to describe a person who is obese. Just like ``fat" is not the proper term for Pink or Selena Gomez. And, yes, semantics matter. According to the CDC, 81\% of overweight boys and 71\% of overweight girls believe they are just the right weight. We've clearly lost our perspective on what's normal when it comes to a healthy weight. So much so it's becoming a national security problem. So what will it take? The answer cannot be the U.S Army.''', # neg2
++
++    '''It's well known that exercise can make your muscles bigger. Now, a study has found it may make your brain larger, too. Physical activity can increase grey matter in the brain, increasing the size of areas that contribute to balance and coordination, according to  Health Day news. The changes in the brain may have health implications in the long-term, such as reducing the risk of falling, said the study's author, Dr Urho Kujala, of the University of Jyvaskyla. Scroll down for video Exercise can increase the size of areas of the brain that contribute to balance and coordination, a study found It could also reduce the risk of being immobile in older age, he added. Dr Kujala said physical activity has already been linked to a number of health benefits, such as lower levels of body fat, reduced heart disease risk factors, better memory and thinking, and a lower risk of type 2 diabetes. But he and his team wanted to understand how exercise affects the brain. They recruited 10 pairs of identical twins, who were all men aged 32 to 36 years. Focusing on twins, who have the same DNA, would allow researchers to see how their environment affects their bodies. In each pair of twins, one brother had exercised more over the past three years than the other, though they reported they carried out similar levels of exercise earlier in their lives. Dr Kujala said: 'On average, the more active members of twin pairs were jogging three hours more per week compared to their inactive co-twins.' The twins had MRI scans of their brains so researchers could see whether physical activity had any impact on the size of their brains, and specific regions. Exercise didn't seem to affect the size of the brain as a whole, Dr Kujala said. But there was a connection between more activity and more brain volume in areas related to movement, he added. Previous research found exercise is linked to lower levels of body fat, a reduced risk of heart disease, better memory and thinking, and a lower risk of type 2 diabetes The twins who exercised more did a better job of controlling their blood sugar, which reduces the risk of diabetes, a finding which is already well-known. The study was published in the journal Medicine & Science in Sports & Exercise. It comes after US researchers found regular exercise can also make you smarter. University of South Carolina experts found  regular treadmill sessions create more mitochondria -  structures in the cells that produce the body's energy - in the brain. This energy boost helped the brain to work faster and more efficiently, effectively keeping it younger, researchers said. In the short term this could reduce mental fatigue and sharpen your thinking in between gym sessions. And building up a large reservoir of mitochondria in the brain could also create a 'buffer' against age-related brain diseases such as Alzheimer's.''',  # pos 1
++
++
++
++    """The respected law professor from Philadelphia now being investigated after allegedly emailing students a link to pornographic footage, was once a contestant on Who Wants to Be a Millionaire, it has emerged. Lisa McElroy, a 50-year-old Drexel professor, appeared on the show in 2010 while it was still hosted my Meredith Vieira. And like her apparent March 31 email mishap, her game show appearance ended with a very public mistake. McElroy, who teaches legal writing, got tripped up on the $12,500 level after flying through the first few questions, notes Philly.com. Wishes she was a millionaire: Drexel law profesor professor Lisa McElroy allegedly sent a link to a pornographic website to her students. In 2010, she appeared on the TV game show Who Wants to Be a Milionaire Mother of two: The mother of two shared an anecdote with then-host Meredith Vieira about having to scramble to find a babysitter for her kids and someone to teach her class after learning she was to appear on the show just two days before taping Lost it: McElroy was tripped up on the $12,500 question. Despite having used two lifelines, she answered wrong and walked away with around $5,000 The questions read: 'As a result of General Motor’s bankruptcy declaration in 2009, what foreign government became one of its largest shareholders?' Even after using two of her lifelines to narrow down the answer, McElroy answered China, which was incorrect. The correct answer was Canada. She walked away with around $5,000. McElroy, who is a children's book and biography author, is apparently also a mother. She opened the appearance by sharing an anecdote with Vieira about having to scramble to find a babysitter after being informed she was chosen to be on Millionaire jsut two days prior to taping. She's accused of sending the inappropriate message this past March 31 under the subject line: 'Great article on writing briefs.' However, when recipients opened the enclosed link, philly.com reports that they were directed to a video of 'a woman engaging in a sexually explicit act'. Lisa McElroy, 50, who teaches legal writing at Drexel University, reportedly sent the inappropriate message on March 31 baring the subject line: 'Great article on writing briefs' Following a number of complaints, the college issued an apology to students. The message read: 'As you may be aware, some students erroneously received an email this morning directing them to a... post that included some inappropriate material. 'We take this matter seriously and apologize for any upset it may have caused.' The university says federal law requires it investigate all reports of inappropriate behaviors of a sexual nature. McElroy did not immediately respond to an email sent to her university account by the Associated Press. When recipients opened the enclosed link, philly.com reports that they were directed to a video of 'a woman engaging in a sexually explicit act' It's not the first time the married mother-of-two has appeared in the spotlight. She is also an accomplished author with a number of published biographies and children's books. On her website, www.lisamcelroy.com, she describes herself as a 'Supreme Court junkie.' She adds that her favorites ways of relaxing include 'crawling under the covers with a dog or two and a really good book' or 'hanging out' with her two adolescent daughters. Regarding the recent email scandal, David Lat - a lawyer and legal commenter -suggests she could have been 'hacked' or made a 'copy/paste error'. While an internal investigation gets underway, it's been reported that McElroy has been placed on administrative leave. While an internal investigation gets underway, it's been reported that McElroy has been placed on administrative leave from Drexel University (seen above)""", # pos2
++]
++
++
++SUMM_CHUNKS = [
++    [# neg rnn
++        "holland beat spain 2-0 at the amsterdam arena on tuesday night . stefan de vrij and davy klaassen scored goals for holland . defeat recalls horror 5-1 defeat by holland at the world cup . vicente del bosque used game to give younger spain players a chance .",# reference
++
++        "holland's 5-1 drubbing of spain last year marked the end of the iberian nation's six-year domination of the world game. spain's 2-0 defeat by holland on tuesday brought back bitter memories of their disastrous 2014 world cup, but coach vicente del bosque will not be too worried about a third straight friendly victory. 'the national team's state of health is good,' says defender gerard pique", # self-generation
++
++        "holland beat spain 2-0 in the group stage in brazil on tuesday night . del bosque will be hoping to find the right mix of players to the world cup . gerard pique could make the right mix of players to the tournament .",# summary (factuality = 0, rnn)
++
++        "del bosque beat spain 2-0 at the amsterdam arena on tuesday night . stefan de vrij and davy klaassen scored goals for holland . defeat recalls horror 5-1 defeat by holland at the world cup . vicente del bosque used game to give younger spain players a chance .",# reference + wrong subj
++
++        "holland could not beat spain 2-0 at the amsterdam arena on tuesday night . stefan de vrij and davy klaassen scored goals for holland . defeat recalls horror 5-1 defeat by holland at the world cup . vicente del bosque used game to give younger spain players a chance .",# reference + negation
++    ], # neg rnn
++
++    [# neg 1
++        """frankie franz watched the right-back pull off the audacious shot in a video . nine-year-old joked with his mum and grandmother that he could make it . youngster moved hoop into middle of the garden and twice achieved feat . frankie is an academy player with dagenham and redbridge football club . he plays centre midfield and dreams of one day turning out for barcelona .""", #reference
++        """frankie franz watched the spanish right-back pull off the staggering trick shot in a video recorded at barcelona’s ciutat esportiva training ground earlier in the month. the viral clip shows the 23-year-old defender lifting the ball into the net to the sound of gasps from his team mates at the catalonia club. joking that he could do the same with his mum and grandmother, frankie took to the garden to have a go. he moved the basketball hoop into the middle of the goal and after a little run up sent the ball straight through the net first time.""", #self generated
++        """frankie franz watched the spanish right-back pull off the trick shot in a video recorded at barcelona 's catalonia club . the 23-year-old defender took to the garden to have a go and moved the basketball hoop into the net to the goal . his mother lucy , 32 , said : ` me said ` i will be able to do . ' .""", # bus wrong,
++        """martin montoya watched the right-back pull off the audacious shot in a video . nine-year-old joked with his mum and grandmother that he could make it . youngster moved hoop into middle of the garden and twice achieved feat . frankie is an academy player with dagenham and redbridge football club . he plays centre midfield and dreams of one day turning out for barcelona .""", # reference wrong subj
++        """frankie franz did not watch the right-back pull off the audacious shot in a video . nine-year-old joked with his mum and grandmother that he could make it . youngster moved hoop into middle of the garden and twice achieved feat . frankie is an academy player with dagenham and redbridge football club . he plays centre midfield and dreams of one day turning out for barcelona .""", # reference negation
++    ], # neg 1
++
++    [ # neg 1_
++        "manchester city beaten 2-1 by crystal palace on easter monday . # 40m signing eliaquim mangala was left on the bench . crystal palace 's entire starting xi cost just # 17million . click here for all the latest manchester city news .", #reference
++        "manchester city lost 2-1 to crystal palace at the etihad on monday night. crystal palace's entire team cost less than half one of manchester city's substitutes. eliaquim mangala and yaya toure were both left on the bench. city have spent a total of £500m on transfer fees so far this season.", #self generated
++        "crystal palace 's xi is contracted to city until june 2019 . jason puncheon signed for # 1.9 m from porto in august last year . glenn murray has scored four goals in the premier league .", # bus wrong,
++        "manchester city beaten 2-1 by crystal palace on easter monday . # 40m signing wilfried zaha was left on the bench . crystal palace 's entire starting xi cost just # 17million . click here for all the latest manchester city news .", # reference wrong subj
++        "manchester city beaten 2-1 by crystal palace on easter monday . # 40m signing eliaquim mangala was not left on the bench . crystal palace 's entire starting xi cost just # 17million . click here for all the latest manchester city news .", # reference negation
++    ], # neg 1_
++
++    [#neg2
++        "in a few years , the military will be unable to recruit enough qualified soldiers because of america 's obesity problem . carol costello : we have a serious national security issue at hand , but it 's within our control if we could own up to it .", #reference
++        """of the 195,000 young men and women who signed up to fight for our country, only 72,000 qualified. a full 10\% didn't qualify because they were overweight. ``it's a sad testament to who we are as a society right now," says maj, gen. allen batschelet.""", #self generated
++        "many young americans will be overweight that the military will be able to recruit enough soldiers . gen. allen batschelet is a national security issue for the u.s. army . he says the obesity issue is so many that it 's too fat to fight .""", # bus wrong,
++        "in a few years , the military will be unable to recruit enough qualified soldiers because of america 's obesity problem . claire putnam : we have a serious national security issue at hand , but it 's within our control if we could own up to it .", # reference wrong subj
++        "in a few years , the military will be unable to recruit enough qualified soldiers because of america 's obesity problem . carol costello : we do not have a serious national security issue at hand , but it 's within our control if we could own up to it .", # reference negation
++    ], #neg2
++
++    [ # pos 1
++        """study : exercising increases the amount of grey matter in the brain . it makes areas of the brain that control balance and co-ordination bigger . in the long term this could reduce the risk of falling or becoming immobile . previous studies show exercise can stave off alzheimer 's and diabetes .""", #reference
++        """physical activity can increase grey matter in the brain, a study found. it can increase the size of areas that contribute to balance and coordination. changes may have health implications in the long-term, such as reducing the risk of falling, said the study's author, dr urho kujala, of the university of jyvaskyla.""", #self generated
++        """exercise can increase grey matter in the brain , increasing the size of areas that contribute to balance and coordination . study 's author , dr urho kujala , of the university of jyvaskyla , said physical activity has already been linked to a number of health benefits , such as lower levels of body fat , reduced heart disease risk factors , better memory and thinking , and a lower risk of type 2 diabetes .""", # summary (BUS Factual_),
++        """study : exercising increases the amount of mitochondria in the brain . it makes areas of the brain that control balance and co-ordination bigger . in the long term this could reduce the risk of falling or becoming immobile . previous studies show exercise can stave off alzheimer 's and diabetes .""", # reference wrong subj
++        """study : exercising does not increase the amount of grey matter in the brain . it makes areas of the brain that control balance and co-ordination bigger . in the long term this could reduce the risk of falling or becoming immobile . previous studies show exercise can stave off alzheimer 's and diabetes .""", # reference negation
++    ], #pos 1
++
++    [ #pos2
++     "lisa mcelroy , 50 , who teaches legal writing at drexel university , reportedly sent the ` inappropriate ' message on march 31 . when recipients clicked the enclosed link , they were allegedly directed to a video of ' a woman engaging in a sexually explicit act ' . mcelroy appeared on the popular game show in 2010 with then-host meredith vieira but lost the game after reaching just $ 12,500 . along with teaching law , mcelroy is also an accomplished author with a number of published biographies and children 's books . has been placed on leave while school investigates .", # reference
++     "lisa mcelroy, a 50-year-old drexel professor, appeared on the show in 2010 while it was still hosted my meredith vieira. she's accused of sending the inappropriate message this past march 31 under the subject line: 'great article on writing briefs' when recipients opened the enclosed link, philly.com reports that they were directed to a video of 'a woman engaging in a sexually explicit act' the married mother-of-two has been placed on administrative leave.", # BART-large+cnn 4.9714
++
++     "lisa mcelroy , 50 , who teaches legal writing at drexel university , appeared on the show in 2010 while it was still hosted my meredith vieira . she got tripped up on the $ 12,500 level after flying through the first few questions , philly.com reports . mcelroy answered wrong and walked away with around $ 5,000 .", # BERTSUM=Factual
++
++     "lisa mcelroy , 50 , who teaches legal writing at philadelphia university , reportedly sent the ` inappropriate ' message on march 31 . when recipients clicked the enclosed link , they were allegedly directed to a video of ' a woman engaging in a sexually explicit act ' . mcelroy appeared on the popular game show in 2010 with then-host meredith vieira but lost the game after reaching just $ 12,500 . along with teaching law , mcelroy is also an accomplished author with a number of published biographies and children 's books . has been placed on leave while school investigates .", # wrong subj (philadelphia)
++
++     "lisa mcelroy , 50 , who teaches legal writing at drexel university , reportedly did not send the ` inappropriate ' message on march 31 . when recipients clicked the enclosed link , they were allegedly directed to a video of ' a woman engaging in a sexually explicit act ' . mcelroy appeared on the popular game show in 2010 with then-host meredith vieira but lost the game after reaching just $ 12,500 . along with teaching law , mcelroy is also an accomplished author with a number of published biographies and children 's books . has been placed on leave while school investigates .", # negation
++     ]# pos2
++]
++def test(pretrained_name='facebook/bart-large-cnn'):
++    print(f"you can test other ckpts compatible with transformers.AutoModelForSeq2SeqLM class \n\te.g. \n\t\tpython test.py --pretrained_name Yale-LILY/brio-cnndm-cased")
++    scorer = evaluate.load('NCSOFT/harim_plus', pretrained_name=pretrained_name)
++    # scorer = Harimplus_Scorer(pretrained_name='facebook/bart-large-cnn')
++    table = ['neg_rnn', 'neg_1', 'neg_1_', 'neg2', 'pos1', 'pos2']
++    keys_neg = ['ref', 'self-gen', 'summary-infactual', 'ref+wrong subj', 'ref+negation']
++    keys_pos = ['ref', 'self-gen', 'summary-factual', 'ref+wrong subj', 'ref+negation']
++    for i in range(len(ARTS)):
++        summs = SUMM_CHUNKS[i]
++        art = ARTS[i]
++        tablename = table[i]
++
++        hp_score = scorer.compute(predictions=summs, references= [art]*len(summs) )
++        hp_score = [round(s,4) for s in hp_score]
++        print(" ")
++        print(f"{tablename=}")
++        pprint(dict(zip(keys_neg if i<4 else keys_pos, hp_score)))
++        print(" ")
++
++
++
++
++
++
++'''https://arxiv.org/abs/2211.12118
++
++
++tablename='neg_1_' # main
++{'ref': 1.7218,
++'self-gen': 3.7006,
++ 'summary-infactual': 1.0265}
++ 'ref+wrong subj': 1.5571,
++ 'ref+negation': 1.5298,
++
++tablename='neg_1'
++{'ref': 3.7448,
++'self-gen': 4.5869,
++ 'summary-infactual': 2.6875}
++ 'ref+wrong subj': 3.7903,
++ 'ref+negation': 3.3877,
++
++
++ tablename='neg_rnn'
++{'ref': 2.7096,
++'self-gen': 3.7338,
++'summary-infactual': 2.669}
++'ref+wrong subj': 2.4039,
++'ref+negation': 2.3759,
++
++
++tablename='neg2'
++{'ref': 1.6283,
++'self-gen': 5.061,
++ 'summary-infactual': 1.3449}
++ 'ref+wrong subj': 1.5808,
++ 'ref+negation': 1.4759,
++
++tablename='pos1'
++{'ref': 3.5959,
++'self-gen': 5.8816,
++ 'summary-factual': 3.8014}
++ 'ref+wrong subj': 3.3481,
++ 'ref+negation': 3.2656,
++
++tablename='pos2'
++{'ref': 2.327,
++ 'self-gen': 5.1158,
++ 'summary-factual': 4.5153}
++ 'ref+wrong subj': 2.204,
++ 'ref+negation': 2.0178,
++
++'''
++
++if __name__ == '__main__':
++    Fire(test)

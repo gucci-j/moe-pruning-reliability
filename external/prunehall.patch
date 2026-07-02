@@ -1,0 +1,63 @@
+diff --git a/pruning_study/eval_funcs.py b/pruning_study/eval_funcs.py
+index 72434bc..4610b04 100644
+--- a/pruning_study/eval_funcs.py
++++ b/pruning_study/eval_funcs.py
+@@ -4,6 +4,12 @@ from summac.model_summac import SummaCZS, SummaCConv
+ 
+ from pruning_study.datamodels import HallucinationResult, SummaryResult
+ 
++import os
++from pathlib import Path
++
++EXTERNAL_PATH = Path(
++    os.getenv("EXTERNAL_PATH", "external")
++).expanduser().resolve()
+ 
+ 
+ class ExperimentEvaluator:
+@@ -14,12 +20,42 @@ class ExperimentEvaluator:
+     ):
+ 
+         # summarization functions
+-        self.rouge =  load('rouge')
+-        self.bertscore = load('bertscore')
++        try:
++            self.rouge = load('rouge')
++        except Exception as e:
++            try:
++                print("Trying to load rouge from local directory...")
++                self.rouge = load(str(EXTERNAL_PATH / "evaluate" / "metrics" / "rouge"))
++            except Exception as e:
++                 raise FileNotFoundError(
++                    "Could not locate local rouge metric directory. "
++                    "Set EXTERNAL_PATH to the `external` directory of `moe-pruning`."
++                )
++        try:
++            self.bertscore = load('bertscore')
++        except Exception as e:
++            try:
++                print("Trying to load bertscore from local directory...")
++                self.bertscore = load(str(EXTERNAL_PATH / "evaluate" / "metrics" / "bertscore"))
++            except Exception as e:
++                 raise FileNotFoundError(
++                    "Could not locate local bertscore metric directory. "
++                    "Set EXTERNAL_PATH to the `external` directory of `moe-pruning`."
++                )
+ 
+ 
+         # hallucination functions
+-        self.harim_plus = load("NCSOFT/harim_plus")
++        try:
++            self.harim_plus = load("NCSOFT/harim_plus")
++        except Exception as e:
++            try:
++                print("Trying to load harim_plus from local directory...")
++                self.harim_plus = load(str(EXTERNAL_PATH / "evaluate" / "metrics" / "harim_plus"))
++            except Exception as e:
++                 raise FileNotFoundError(
++                    "Could not locate local harim_plus metric directory. "
++                    "Set EXTERNAL_PATH to the `external` directory of `moe-pruning`."
++                )
+         self.summac_zs = SummaCZS(
+             granularity="sentence",
+             model_name="vitc",

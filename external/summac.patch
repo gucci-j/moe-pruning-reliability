@@ -1,0 +1,77 @@
+diff --git a/summac/model_summac.py b/summac/model_summac.py
+index 0026bbe..ce00a95 100644
+--- a/summac/model_summac.py
++++ b/summac/model_summac.py
+@@ -1,6 +1,11 @@
+ from transformers import AutoTokenizer, AutoModelForSequenceClassification
+ import nltk, numpy as np, torch, os, json
+ from .utils_misc import batcher
++from pathlib import Path
++
++EXTERNAL_PATH = Path(
++    os.getenv("EXTERNAL_PATH", "external")
++).expanduser().resolve()
+ 
+ model_map = {
+     "snli-base": {"model_card": "boychaboy/SNLI_roberta-base", "entailment_idx": 0, "contradiction_idx": 2},
+@@ -64,6 +69,22 @@ class SummaCImager:
+         if self.device == "cuda":
+             self.model.half()
+ 
++    def _tokenize_nli_batch(self, premises, hypotheses):
++        tokenization_kwargs = {
++            "padding": True,
++            "truncation": "only_first",
++            "max_length": self.max_input_length,
++            "return_tensors": "pt",
++        }
++        try:
++            return self.tokenizer(premises, hypotheses, **tokenization_kwargs)
++        except Exception as exc:
++            if "Sequence to truncate too short" not in str(exc):
++                raise
++
++            tokenization_kwargs["truncation"] = "longest_first"
++            return self.tokenizer(premises, hypotheses, **tokenization_kwargs)
++
+     def split_sentences(self, text):
+         sentences = nltk.tokenize.sent_tokenize(text)
+         sentences = [sent for sent in sentences if len(sent)>10]
+@@ -127,7 +148,7 @@ class SummaCImager:
+         for batch in batcher(dataset, batch_size=20):
+             batch_prems = [b["premise"] for b in batch]
+             batch_hypos = [b["hypothesis"] for b in batch]
+-            batch_tokens = self.tokenizer.batch_encode_plus(list(zip(batch_prems, batch_hypos)), padding=True, truncation=True, max_length=self.max_input_length, return_tensors="pt", truncation_strategy="only_first")
++            batch_tokens = self._tokenize_nli_batch(batch_prems, batch_hypos)
+             with torch.no_grad():
+                 model_outputs = self.model(**{k: v.to(self.device) for k, v in batch_tokens.items()})
+ 
+@@ -169,7 +190,7 @@ class SummaCImager:
+         for batch in batcher(total_dataset, batch_size=batch_size):
+             batch_prems = [b["premise"] for b in batch]
+             batch_hypos = [b["hypothesis"] for b in batch]
+-            batch_tokens = self.tokenizer.batch_encode_plus(list(zip(batch_prems, batch_hypos)), padding=True, truncation=True, max_length=self.max_input_length, return_tensors="pt", truncation_strategy="only_first")
++            batch_tokens = self._tokenize_nli_batch(batch_prems, batch_hypos)
+             with torch.no_grad():
+                 model_outputs = self.model(**{k: v.to(self.device) for k, v in batch_tokens.items()})
+ 
+@@ -247,7 +268,18 @@ class SummaCConv(torch.nn.Module):
+                 os.system("wget https://github.com/tingofurro/summac/raw/master/summac_conv_vitc_sent_perc_e.bin")
+                 assert bins == "percentile", "bins mode should be set to percentile if using the default 1-d convolution weights."
+         if start_file is not None:
+-            print(self.load_state_dict(torch.load(start_file)))
++            try:
++                print(self.load_state_dict(torch.load(start_file)))
++            except Exception as e:
++                print("Could not load starting file %s." % (start_file))
++                try:
++                    print("Trying to load starting file from local directory...")
++                    print(self.load_state_dict(torch.load(str(EXTERNAL_PATH / "summac" / start_file))))
++                except Exception as e:
++                    raise FileNotFoundError(
++                        "Could not locate local starting file. "
++                        "Set EXTERNAL_PATH to the `external` directory of `moe-pruning`."
++                    )
+ 
+     def build_image(self, original, generated):
+         images = [imager.build_image(original, generated) for imager in self.imagers]

@@ -1,0 +1,172 @@
+diff --git a/lm_eval/tasks/humaneval/utils.py b/lm_eval/tasks/humaneval/utils.py
+index 24dd0111..18a94284 100644
+--- a/lm_eval/tasks/humaneval/utils.py
++++ b/lm_eval/tasks/humaneval/utils.py
+@@ -1,8 +1,26 @@
++import os
++from pathlib import Path
+ import evaluate as hf_evaluate
+ 
++EXTERNAL_PATH = Path(
++    os.getenv("EXTERNAL_PATH", "external")
++).expanduser().resolve()
++
++def _resolve_code_eval_metric_dir() -> Path:
++    metric_dir = EXTERNAL_PATH / "evaluate" / "metrics" / "code_eval"
++    if metric_dir.exists():
++        return metric_dir
++
++    raise FileNotFoundError(
++        "Could not locate local code_eval metric directory. "
++        "Set EXTERNAL_PATH to the `external` directory of `moe-pruning`."
++    )
+ 
+ try:
+-    compute_ = hf_evaluate.load("code_eval")
++    # Use the directory, not code_eval.py, because it depends on sibling files (execute.py).
++    code_eval_dir = _resolve_code_eval_metric_dir()
++    compute_ = hf_evaluate.load(str(code_eval_dir))
++
+     test_cases = ["assert add(2, 3)==5"]
+     candidates = [["def add(a,b): return a*b"]]
+     results = compute_.compute(references=test_cases, predictions=candidates, k=[1])
+diff --git a/lm_eval/tasks/leaderboard/ifeval/ifeval.yaml b/lm_eval/tasks/leaderboard/ifeval/ifeval.yaml
+index 72c3ba02..dbea58cf 100644
+--- a/lm_eval/tasks/leaderboard/ifeval/ifeval.yaml
++++ b/lm_eval/tasks/leaderboard/ifeval/ifeval.yaml
+@@ -1,6 +1,8 @@
+ task: leaderboard_ifeval
+-dataset_path: wis-k/instruction-following-eval
+-dataset_name: null
++custom_dataset: !function utils.load_ifeval_dataset
++dataset_kwargs:
++  dataset_path: null
++  dataset_name: null
+ output_type: generate_until
+ test_split: train
+ num_fewshot: 0
+diff --git a/lm_eval/tasks/leaderboard/ifeval/utils.py b/lm_eval/tasks/leaderboard/ifeval/utils.py
+index 985e8d5a..a5870e2b 100644
+--- a/lm_eval/tasks/leaderboard/ifeval/utils.py
++++ b/lm_eval/tasks/leaderboard/ifeval/utils.py
+@@ -1,9 +1,32 @@
+ import dataclasses
++import os
+ from typing import Dict, Optional, Union
+ 
++import datasets
++
+ from lm_eval.tasks.ifeval import instructions_registry
+ 
+ 
++_DATASET_LOAD_KWARGS = {
++    "data_dir",
++    "data_files",
++    "split",
++    "cache_dir",
++    "features",
++    "download_config",
++    "download_mode",
++    "verification_mode",
++    "keep_in_memory",
++    "save_infos",
++    "revision",
++    "token",
++    "streaming",
++    "num_proc",
++    "storage_options",
++    "trust_remote_code",
++}
++
++
+ @dataclasses.dataclass
+ class InputExample:
+     key: int
+@@ -21,6 +44,21 @@ class OutputExample:
+     follow_instruction_list: list[bool]
+ 
+ 
++def load_ifeval_dataset(dataset_path: str = "wis-k/instruction-following-eval", dataset_name=None, **kwargs):
++    base_path = os.getenv("EVAL_DATASET_PATH")
++    path = (
++        os.path.join(base_path, "instruction-following-eval")
++        if base_path
++        else (dataset_path or "wis-k/instruction-following-eval")
++    )
++
++    name = os.getenv("IFEVAL_DATASET_NAME", dataset_name)
++    filtered_kwargs = {
++        k: v for k, v in kwargs.items() if k in _DATASET_LOAD_KWARGS and v is not None
++    }
++    return datasets.load_dataset(path=path, name=name, **filtered_kwargs)
++
++
+ def test_instruction_following_strict(
+     inp,
+     response,
+diff --git a/lm_eval/tasks/medqa/medqa.yaml b/lm_eval/tasks/medqa/medqa.yaml
+index 7d555596..167385b6 100644
+--- a/lm_eval/tasks/medqa/medqa.yaml
++++ b/lm_eval/tasks/medqa/medqa.yaml
+@@ -1,5 +1,8 @@
+ task: medqa_4options
+-dataset_path: GBaker/MedQA-USMLE-4-options-hf
++custom_dataset: !function preprocess_medqa.load_medqa_dataset
++dataset_kwargs:
++  dataset_path: null
++  dataset_name: null
+ output_type: multiple_choice
+ training_split: train
+ validation_split: validation
+diff --git a/lm_eval/tasks/medqa/preprocess_medqa.py b/lm_eval/tasks/medqa/preprocess_medqa.py
+index 6ec35851..60d1a2ec 100644
+--- a/lm_eval/tasks/medqa/preprocess_medqa.py
++++ b/lm_eval/tasks/medqa/preprocess_medqa.py
+@@ -1,3 +1,47 @@
++import os
++
++import datasets
++
++
++_DATASET_LOAD_KWARGS = {
++    "data_dir",
++    "data_files",
++    "split",
++    "cache_dir",
++    "features",
++    "download_config",
++    "download_mode",
++    "verification_mode",
++    "keep_in_memory",
++    "save_infos",
++    "revision",
++    "token",
++    "streaming",
++    "num_proc",
++    "storage_options",
++    "trust_remote_code",
++}
++
++
++def load_medqa_dataset(
++    dataset_path: str = "GBaker",
++    dataset_name=None,
++    **kwargs,
++):
++    base_path = os.getenv("EVAL_DATASET_PATH")
++    path = (
++        os.path.join(base_path, "MedQA-USMLE-4-options-hf")
++        if base_path
++        else (dataset_path or "GBaker/MedQA-USMLE-4-options-hf")
++    )
++
++    name = os.getenv("MEDQA_DATASET_NAME", dataset_name)
++    filtered_kwargs = {
++        k: v for k, v in kwargs.items() if k in _DATASET_LOAD_KWARGS and v is not None
++    }
++    return datasets.load_dataset(path=path, name=name, **filtered_kwargs)
++
++
+ def doc_to_text(doc) -> str:
+     option_choices = {
+         "A": doc["ending0"],

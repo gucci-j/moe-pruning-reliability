@@ -1,0 +1,21 @@
+[submodule "external/medhalt"]
+	path = external/medhalt
+	url = https://github.com/medhalt/medhalt.git
+[submodule "external/prunehall"]
+	path = external/prunehall
+	url = https://github.com/casszhao/PruneHall.git
+[submodule "external/summac"]
+	path = external/summac
+	url = https://github.com/tingofurro/summac.git
+[submodule "external/rct"]
+	path = external/rct
+	url = https://github.com/bwallace/RCT-summarization-data.git
+[submodule "external/evaluate"]
+	path = external/evaluate
+	url = https://github.com/huggingface/evaluate.git
+[submodule "external/lm-evaluation-harness"]
+	path = external/lm-evaluation-harness
+	url = https://github.com/EleutherAI/lm-evaluation-harness.git
+[submodule "external/multi_news_plus"]
+	path = external/multi_news_plus
+	url = https://github.com/c-juhwan/multi_news_plus.git
