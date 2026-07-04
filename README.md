@@ -1,7 +1,7 @@
 On the Utility and Factual Reliability of Pruned Mixture-of-Experts Models in the Biomedical Domain
 ===
 
-This is the official repository for the paper ["On the Utility and Factual Reliability of Pruned Mixture-of-Experts Models in the Biomedical Domain"](TBA). We provide the code and scripts to reproduce the results in the paper.
+This is the official repository for the paper ["On the Utility and Factual Reliability of Pruned Mixture-of-Experts Models in the Biomedical Domain"](https://arxiv.org/abs/2607.01444). We provide the code and scripts to reproduce the results in the paper.
 
 ![motivation](motivation.png)
 
@@ -262,5 +262,15 @@ This software is licensed under the [MIT License](LICENSE).
 ## Citation
 Cite us when you use this codebase!
 ```bibtex
-@article{TBA}
+@article{yamaguchi2026utilityfactualreliabilitypruned,
+      title={On the Utility and Factual Reliability of Pruned Mixture-of-Experts Models in the Biomedical Domain}, 
+      author={Atsuki Yamaguchi and Szymon Palucha and Léo Bijar and Aline Villavicencio and Nikolaos Aletras},
+      year={2026},
+      eprint={2607.01444},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2607.01444}, 
+      journal={arXiv preprint},
+      volume={arXiv:2607.01444},
+}
 ```
